@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+    <!--- Header --->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content= "IE=edge">
+        <meta name = "viewpoint" content = "with=device-width, initial-scale=1.0">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+
+        <title>Josiah-John Green | A Little About Me </title>
+
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="icon" type="image/png" sizes="16x16"  href="favicons/favicon-16x16.png">    
+    
+        <script src="index.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">(function(){emailjs.init("mhN9uka1-ow__7W96");})();</script>
+    
+    </head>
+
+
+
+    <!--- Body --->
+    <body>
+
+        <!--- Header --->
+        <section class="header" id = "header">
+            <nav class = "nav container">
+                <a href = "index.html" class = "nav__logo"> John </a>
+
+                <ul id="sidemenu" class = "nav__list">
+                    <li class = "nav__item">
+                        <a href = "#home" class = "nav__link active-link"> Home </a>
+                    </li>
+
+                    <li class = "nav__item">
+                        <a href = "#about" class = "nav__link"> About </a>
+                    </li>
+
+                    <li class = "nav__item">
+                        <a href = "#qualification" class = "nav__link"> Experiences </a>
+                    </li>
+
+
+                    <li class = "nav__item">
+                        <a href = "#services" class = "nav__link"> Services </a>
+                    </li>
+
+
+                    <li class = "nav__item">
+                        <a href = "#works" class = "nav__link"> Portfolio </a>
+                    </li>
+
+
+                    <li class = "nav__item">
+                        <a href = "#contact" class = "nav__link"> Contact </a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>        
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </section>
+
+        <!--- Main --->
+
+        <main class = "main">
+
+            <!--- Home --->
+            <section class="home" id = "home">
+                <div class="home__container container grid">
+                    <div class="home__content">
+                        <span class="home__small"> Hello </span>
+                        <h1 class="home__title">
+                            <span>I'm </span> John <br/> 
+                            a <span> Prospective Software Engineer </span>
+                        </h1>
+
+                        <p class="home__description">
+                            Currently, a major in "Software Engineering", studying at the University of the West Indies, Mona,
+                            Jamaica (U.W.I), in pursuit of my kindered aspiration - Software Engineer/Developer.
+                        </p>   
+                        
+                        <p class="home__btns">
+                            <a href = "#contact" class = "btn"> Hire Me </a>
+                            <a href = "https://josiah-john-green.github.io/josiah-john-green-professional/#works" target="_blank" class = "btn btn--transparent"> Portfolio </a>
+                        </p>   
+                    </div>
+                    
+                    <div class ="home__img-wrapper">
+                        <img src="profile.png" alt="" class="home__img">
+                    </div>
+                </div>
+            </section>
+
+             <!--- Favourites --->
+            <section class ="personal section" id ="favourite">
+                <h2 class="section__title title-center" data-title="My Top Picks">Favourites</h2>
+
+                <div class="personal__container container grid">
+
+                    <div class="personal__item">
+                        <i class="fa-solid fa-volume-low personal__icon"></i>
+                        
+                        <h3 class="personal__title"> Music </h3>
+                        <p class="personal__description"> I find the lustre of clasical, the "trebling" of electronic, and bassic booms, 
+                            most appeasing, resultantly scores, songs and melodies which naturally invoke such, have my attention. <br> <br> PAINT it BLACK 
+                            from the hit series "Wednesday", "Alone" by Marshmello, and "Musical Reditions of Popular Songs in the Past Decade" by the 
+                            Bridgeton Franchise.
+                        </p>
+
+                        <span class="personal__no">01</span>
+                    </div>
+
+                    <div class="personal__item">
+                        <i class="fa-solid fa-headset personal__icon"></i>
+                        
+                        <h3 class="personal__title"> Game </h3>
+                        <p class="personal__description"> The breathtakingly illustroius world, etheral music, fervent storytelling,
+                            and complex characters allured me to the RPG that is Genshin. <br> <br> Exploring the lands of Teyvat, I spend my free time, embracing 
+                            the intricate story of star-crossed siblings in their venture through the realms.   
+                        </p>
+
+                        <span class="personal__no">02</span>
+                    </div>
+
+                    <div class="personal__item">
+                        <i class="fa-solid fa-dragon personal__icon"></i>
+                        
+                        <h3 class="personal__title"> Book </h3>
+                        <p class="personal__description"> The fantastical world of magic, wonder and mystery allured me to the fiction
+                            that is Harry Potter. <br> <br> It's vibrant excuetion of discreet world of wizards/witches, living amongst us, seen through a green-eyed
+                            messy-haired, Harry, creates an immersive environment that not only introduces him to a unfamilar world but I as well. 
+
+                        <span class="personal__no">03</span>
+                    </div>
+                </div>            
+            </section>
+
+
+            <!--- Interests --->
+            <section class ="personal section" id ="interests">
+                <h2 class="section__title title-center" data-title="A Little About Me">Interests</h2>
+
+                <div class="personal__container container grid">
+
+                    <div class="personal__item">
+                        <i class="fa-solid fa-code personal__icon"></i>
+                        
+                        <h3 class="personal__title"> Coding </h3>
+                        <p class="personal__description"> Probably opening to my curious nature, I was always 
+                            intrigued by the workings of a piece of software: How does it work? What does it do? 
+                            Can it be improved? Added to? Integrated?  <br> <br> Resultantly this innate curiosity and later 
+                            passion, culminated in my degree of choice, "Software Engineering".
+                        </p>
+
+                        <span class="personal__no">01</span>
+                    </div>
+
+                    <div class="personal__item">
+                        <i class="fa-solid fa-headset personal__icon"></i>
+                        
+                        <h3 class="personal__title"> Gaming </h3>
+                        <p class="personal__description"> Conquering and exploring the lands of Teyvat; 
+                            building the most eccentric structures in a world built for crafting; and interacting
+                            and battling players for championship glory through the UNITE, PokeOne and LOL universes.  <br> <br>  
+                            Is just one of the ways I spend my free time.     
+                        </p>
+
+                        <span class="personal__no">02</span>
+                    </div>
+
+                    <div class="personal__item">
+                        <i class="fa-solid fa-feather-pointed personal__icon"></i>
+                        
+                        <h3 class="personal__title"> Writing </h3>
+                        <p class="personal__description"> Fantastical tales, daring adventures, dastardly fails 
+                            and astounding triumphs are what I cultivate and bound to the pages of the manuscripts and 
+                            amateur works, I design.  <br> <br> Taking on the role of a not-so-newly minted creative writer. Inspired 
+                            by Harry Potter, Percy Jackson and Hardy Boy books 
+                        </p>
+
+                        <span class="personal__no">03</span>
+                    </div>
+                </div>            
+            </section>
+
+            <!--- Goals --->
+            <section class ="personal section" id ="goals">
+                <h2 class="section__title title-center" data-title="My Drive">Goals</h2>
+
+                <div class="personal__container container grid">
+
+                    <div class="personal__item">
+                        <i class="fa-solid fa-copyright personal__icon"></i>
+                        
+                        <h3 class="personal__title"> Build a Company </h3>
+                        <p class="personal__description"> A start-up aimed at the development of software technologies 
+                            is what I hope to accomplish in the years after graduation.  <br> <br> In hopes of making software solutions, 
+                            targetting tedious everyday problems.    
+                        </p>
+
+                        <span class="personal__no">01</span>
+                    </div>
+
+                    <div class="personal__item">
+                        <i class="fa-solid fa-gear personal__icon"></i>
+                        
+                        <h3 class="personal__title"> Become a Soft. Engnr. </h3>
+                        <p class="personal__description"> After my tenure at U.W.I. ends, I plan to use the skills and traits 
+                            garnered through my internship and experiences to become a well-established software engineer or 
+                            developer.  <br> <br> Solving problems ranging from the simple to the critically complex.  
+                        </p>
+
+                        <span class="personal__no">02</span>
+                    </div>
+
+                    <div class="personal__item">
+                        <i class="fa-solid fa-cubes personal__icon"></i>
+                        
+                        <h3 class="personal__title"> Build Assets </h3>
+                        <p class="personal__description"> Building assets is a crucial part of my long-term vision for personal and
+                            professional growth. I recognize that assets encompass various forms, including financial, intellectual, and 
+                            creative resources that can contribute to my overall success and stability. <br> <br> My goal is to strategically build a 
+                            diverse portfolio of assets that will support me in various aspects of life.
+                        </p>
+
+                        <span class="personal__no">03</span>
+                    </div>
+
+                </div>            
+            </section>
+
+ 
+            <!--- Contacts --->
+
+            <section class="contact section" id = "contact">
+                <h2 class="section__title title-center" data-title="Get in touch">Contact Me</h2>
+        
+                <div class="contact__container container grid">
+                    <div class = "contact__details">
+
+                        <div class="contact__item">
+                            <i class="fa-solid fa-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Call Us</h3>
+                                <span class="contact__data">+1 (876)-208-2517</span>
+                            </div>
+
+                        </div>
+
+                        <div class="contact__item">
+                            <i class="fa-solid fa-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email Us</h3>
+                                <span class="contact__data">josiahjohngreen@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <i class="fa-solid fa-location-dot contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Address</h3>
+                                <span class="contact__data"> Kingston, Jamaica. </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form">
+
+                        <div class="form__group">
+                            <div class="form__input">
+                                <input 
+                                type="text" 
+                                placeholder="Name" 
+                                id ="Name"
+                                class="input__control"/>
+                            </div>
+
+                            <div class="form__input">
+                                <input 
+                                type="email" 
+                                placeholder="Email" 
+                                id ="Email"
+                                class="input__control"/>
+                            </div>
+                        </div>
+
+                        <div class="form__input">
+                            <input 
+                            type="text" 
+                            placeholder="Subject"
+                            id ="Subject" 
+                            class="input__control"/>
+                        </div>
+
+                        <div class="form__input">
+                            <textarea 
+                            name="" 
+                            id ="Message"
+                            placeholder="Message" 
+                            cols="30"
+                            rows="10"
+                            class="input__control textarea"></textarea>
+                        </div>
+
+                        <button class="btn contact__btn" onclick="sendMail()">Send Message</button>
+
+                    </form>
+                </div>
+            </section>
+
+            <!--- Footer --->
+
+            <section class = "footer">
+                <div class="footer__container container">
+                    <p class="footer__copyright">2023 &copy; Josiah-John Green. All Right Reserved</p> 
+
+                    <div class="footer__social-links">
+                        <a href="https://www.hackerrank.com/josiahjohngreen" class = "footer__social-link btn--transparent" target ="_blank">
+                            <i class="fa-brands fa-hackerrank"></i>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/josiah_jonh_" class = "footer__social-link btn--transparent" target ="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/josiah-john-green/" class = "footer__social-link btn--transparent" target ="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/josiah-john-green" class = "footer__social-link btn--transparent" target ="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--- Filter JS --->
+            <script src="mixitup.min.js"></script>
+           
+            <!--- Main JS --->
+            <script src="main.js"></script>            
+        </main>                    
+    </body>
+</html>
+
+
