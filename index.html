@@ -14,12 +14,9 @@
 
         <link rel = "stylesheet" href = "style.css">
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-        <link rel="icon" type="image/png" sizes="16x16"  href="favicons/favicon-16x16.png">    
-    
-        <script src="index.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">(function(){emailjs.init("mhN9uka1-ow__7W96");})();</script>
-    
+        <link rel = "stylesheet" href = "https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="icon" type="image/png" sizes="16x16"  href="favicons/favicon-16x16.png">   
+  
     </head>
 
 
@@ -30,38 +27,48 @@
         <!--- Header --->
         <section class="header" id = "header">
             <nav class = "nav container">
-                <a href = "index.html" class = "nav__logo"> John </a>
+                <a href = "#" class = "nav__logo"> John </a>
 
-                <ul id="sidemenu" class = "nav__list">
-                    <li class = "nav__item">
-                        <a href = "#home" class = "nav__link active-link"> Home </a>
-                    </li>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class = "nav__list">
+                        <li class = "nav__item active-link">
+                            <a href = "#home" class = "nav__link"> 
+                                <i class="uil uil-estate nav__icon"></i> Home 
+                            </a>
+                        </li>
 
-                    <li class = "nav__item">
-                        <a href = "#about" class = "nav__link"> About </a>
-                    </li>
+                        <li class = "nav__item">
+                            <a href = "#interests" class = "nav__link"> 
+                                <i class="uil uil-setting nav__icon"></i> Interests 
+                            </a>
+                        </li>
 
-                    <li class = "nav__item">
-                        <a href = "#qualification" class = "nav__link"> Experiences </a>
-                    </li>
+                        <li class = "nav__item">
+                            <a href = "#favourite" class = "nav__link"> 
+                                <i class="uil uil-briefcase nav__icon"></i> Taste 
+                            </a>
+                        </li>
 
+                        <li class = "nav__item">
+                            <a href = "#goals" class = "nav__link"> 
+                                <i class="uil uil-scenery nav__icon"></i> Goals 
+                            </a>
+                        </li>
 
-                    <li class = "nav__item">
-                        <a href = "#services" class = "nav__link"> Services </a>
-                    </li>
-
-
-                    <li class = "nav__item">
-                        <a href = "#works" class = "nav__link"> Portfolio </a>
-                    </li>
-
-
-                    <li class = "nav__item">
-                        <a href = "#contact" class = "nav__link"> Contact </a>
-                    </li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>        
-                <i class="fas fa-bars" onclick="openmenu()"></i>
+                        <li class = "nav__item">
+                            <a href = "#contact" class = "nav__link"> 
+                                <i class="uil uil-message nav__icon"></i> Contact 
+                            </a>
+                        </li>
+                    </ul> 
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>       
+                
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>            
+                </div>
             </nav>
         </section>
 
@@ -96,145 +103,215 @@
                 </div>
             </section>
 
-             <!--- Favourites --->
-            <section class ="personal section" id ="favourite">
-                <h2 class="section__title title-center" data-title="My Top Picks">Favourites</h2>
+            <!--- Interests --->
+            <section class ="interests section" id ="interests">
+                <h2 class="section__title title-center" data-title="A Little About Me">Interests</h2>
 
-                <div class="personal__container container grid">
+                <div class="interests__container container grid">
 
-                    <div class="personal__item">
-                        <i class="fa-solid fa-volume-low personal__icon"></i>
+                    <div class="interests__item">
+                        <i class="fa-solid fa-code personal__icon"></i>
                         
-                        <h3 class="personal__title"> Music </h3>
-                        <p class="personal__description"> I find the lustre of clasical, the "trebling" of electronic, and bassic booms, 
-                            most appeasing, resultantly scores, songs and melodies which naturally invoke such, have my attention. <br> <br> PAINT it BLACK 
-                            from the hit series "Wednesday", "Alone" by Marshmello, and "Musical Reditions of Popular Songs in the Past Decade" by the 
-                            Bridgeton Franchise.
+                        <h3 class="interests__title"> Coding </h3>
+                        <p class="interests__description">The synergy between coding and graphic design fuels my enthusiasm, 
+                            allowing me to explore new possibilities and continuously evolve in these dynamic fields. 
                         </p>
 
                         <span class="personal__no">01</span>
                     </div>
 
-                    <div class="personal__item">
+                    <div class="interests__item">
                         <i class="fa-solid fa-headset personal__icon"></i>
                         
-                        <h3 class="personal__title"> Game </h3>
-                        <p class="personal__description"> The breathtakingly illustroius world, etheral music, fervent storytelling,
-                            and complex characters allured me to the RPG that is Genshin. <br> <br> Exploring the lands of Teyvat, I spend my free time, embracing 
-                            the intricate story of star-crossed siblings in their venture through the realms.   
+                        <h3 class="interests__title"> Gaming </h3>
+                        <p class="interests__description"> In my free time, I immerse myself in the enchanting worlds of gaming,
+                            such as Teyvat, crafting eccentric structures, and engaging in competitive battles.
                         </p>
 
                         <span class="personal__no">02</span>
                     </div>
 
-                    <div class="personal__item">
-                        <i class="fa-solid fa-dragon personal__icon"></i>
+                    <div class="interests__item">
+                        <i class="fa-solid fa-feather-pointed personal__icon"></i>
                         
-                        <h3 class="personal__title"> Book </h3>
-                        <p class="personal__description"> The fantastical world of magic, wonder and mystery allured me to the fiction
-                            that is Harry Potter. <br> <br> It's vibrant excuetion of discreet world of wizards/witches, living amongst us, seen through a green-eyed
-                            messy-haired, Harry, creates an immersive environment that not only introduces him to a unfamilar world but I as well. 
+                        <h3 class="interests__title"> Writing </h3>
+                        <p class="interests__description"> I also enjoy writing, cultivating stories inspired by Harry Potter, 
+                            Percy Jackson, and the Hardy Boys, where fantastical adventures and astonishing triumphs come to life.
+                        </p>
 
                         <span class="personal__no">03</span>
+                    </div>
+
+                    <div class="interests__item">
+                        <i class="fa-solid fa-book personal__icon"></i>
+                        
+                        <h3 class="interests__title"> Reading </h3>
+                        <p class="interests__description"> With works inspired by Harry Potter, Percy Jackson, and the Hardy Boys, 
+                            I experience the thrill of captivating stories: fueling my imagination, and providing escape from reality.
+                        </p>
+
+                        <span class="personal__no">04</span>
                     </div>
                 </div>            
             </section>
 
+            <!--- Favourites --->
+            <section class ="favourite section" id ="favourite">
+                <h2 class="section__title title-center" data-title="My Top Picks">Favourites</h2>
 
-            <!--- Interests --->
-            <section class ="personal section" id ="interests">
-                <h2 class="section__title title-center" data-title="A Little About Me">Interests</h2>
+                <div class="favourite__container container">
 
-                <div class="personal__container container grid">
+                    <div class="favourite__contents active">
 
-                    <div class="personal__item">
-                        <i class="fa-solid fa-code personal__icon"></i>
-                        
-                        <h3 class="personal__title"> Coding </h3>
-                        <p class="personal__description"> Probably opening to my curious nature, I was always 
-                            intrigued by the workings of a piece of software: How does it work? What does it do? 
-                            Can it be improved? Added to? Integrated?  <br> <br> Resultantly this innate curiosity and later 
-                            passion, culminated in my degree of choice, "Software Engineering".
-                        </p>
+                        <div class="favourite__slide">
 
-                        <span class="personal__no">01</span>
+                            <div class="favourite__content">
+                                <span class="favourite__no">01</span>
+
+                                <h3 class="favourite__title">Music</h3>
+                                <p class="favourite__description">Classical and electronic music transport me to realms of 
+                                    elegance and pulsating beats, offering a rich tapestry of melodies and emotions. These diverse 
+                                    genres intertwine, inspiring me and igniting my spirit, as I find solace and inspiration in their 
+                                    harmonies and sonic experiences.
+                                </p>
+                            </div>
+
+                            <div class="favourite__image">
+
+                                <img src="Headphone-amico.svg" alt="">
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="personal__item">
-                        <i class="fa-solid fa-headset personal__icon"></i>
-                        
-                        <h3 class="personal__title"> Gaming </h3>
-                        <p class="personal__description"> Conquering and exploring the lands of Teyvat; 
-                            building the most eccentric structures in a world built for crafting; and interacting
-                            and battling players for championship glory through the UNITE, PokeOne and LOL universes.  <br> <br>  
-                            Is just one of the ways I spend my free time.     
-                        </p>
+                    <div class="favourite__contents">
 
-                        <span class="personal__no">02</span>
+                        <div class="favourite__slide">
+
+                            <div class="favourite__content">
+                                <span class="favourite__no">02</span>
+
+                                <h3 class="favourite__title">Game</h3>
+                                <p class="favourite__description">Immersed in the worlds of Teyvat, crafting eccentric structures, 
+                                    and competing in UNITE, PokeOne, and League of Legends, I embark on thrilling adventures, engage with 
+                                    players, and compete for glory. Gaming becomes an immersive escape, fostering camaraderie and showcasing 
+                                    my skills in strategic gameplay.
+                            </div>
+
+                            <div class="favourite__image">
+
+                                <img src="Card game-pana.svg" alt="">
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="personal__item">
-                        <i class="fa-solid fa-feather-pointed personal__icon"></i>
-                        
-                        <h3 class="personal__title"> Writing </h3>
-                        <p class="personal__description"> Fantastical tales, daring adventures, dastardly fails 
-                            and astounding triumphs are what I cultivate and bound to the pages of the manuscripts and 
-                            amateur works, I design.  <br> <br> Taking on the role of a not-so-newly minted creative writer. Inspired 
-                            by Harry Potter, Percy Jackson and Hardy Boy books 
-                        </p>
+                    <div class="favourite__contents">
 
-                        <span class="personal__no">03</span>
+                        <div class="favourite__slide">
+
+                            <div class="favourite__content">
+                                <span class="favourite__no">03</span>
+                                
+                                <h3 class="favourite__title">Book</h3>
+                                <p class="favourite__description">Harry Potter, Percy Jackson, and the Hardy Boys lead me on magical 
+                                    adventures, transporting me to realms of wonder and mythology. These beloved books ignite my imagination, 
+                                    inspire courage, and immerse me in transformative storytelling, leaving an indelible mark on my heart.
+                                </p>
+                            </div>
+
+                            <div class="favourite__image">
+
+                                <img src="Writing room-amico.svg" alt="">
+                            </div>
+                        </div>                      
                     </div>
-                </div>            
+
+                    <div class="favourite__contents">
+                        
+                        <div class="favourite__slide">
+
+                            <div class="favourite__content">                                
+                                <span class="favourite__no">04</span>
+
+                                <h3 class="favourite__title">Code</h3>
+                                <p class="favourite__description">Blending coding and graphic design, I create captivating 
+                                    experiences where functionality meets visual aesthetics. With expertise in Python, Java, CSS, HTML, and a 
+                                    passion for design, I bring ideas to life, crafting innovative digital experiences that seamlessly marry form and function.
+                                </p>
+                            </div>
+
+                            <div class="favourite__image">
+                                <img src="Application programming interface-amico.svg" alt="">
+                            </div>
+                        </div>                      
+                    </div>
+                </div>    
+                                
+                <div id="previous" onclick="previous()">
+                    <i class="uil uil-ellipsis-v"></i>
+                </div>
+
+                <div id="next" onclick="next()">
+                    <i class="uil uil-ellipsis-v"></i>
+                </div>
             </section>
 
             <!--- Goals --->
-            <section class ="personal section" id ="goals">
+            <section class ="goals section" id ="goals">
                 <h2 class="section__title title-center" data-title="My Drive">Goals</h2>
 
-                <div class="personal__container container grid">
+                <div class="goals__container container grid">
 
-                    <div class="personal__item">
+                    <div class="goals__item">
                         <i class="fa-solid fa-copyright personal__icon"></i>
                         
-                        <h3 class="personal__title"> Build a Company </h3>
-                        <p class="personal__description"> A start-up aimed at the development of software technologies 
-                            is what I hope to accomplish in the years after graduation.  <br> <br> In hopes of making software solutions, 
-                            targetting tedious everyday problems.    
+                        <h3 class="goals__title"> Build a Company </h3>
+                        <p class="goals__description">Driven by innovation, I plan to start a software company to deliver 
+                            cutting-edge products and services. With a focus on strategic planning, agile methodologies, and customer-centricity, 
+                            I aim to establish a trusted reputation in the industry.    
                         </p>
 
                         <span class="personal__no">01</span>
                     </div>
 
-                    <div class="personal__item">
-                        <i class="fa-solid fa-gear personal__icon"></i>
+                    <div class="goals__item">
+                        <i class="fa-solid fa-code personal__icon"></i>
                         
-                        <h3 class="personal__title"> Become a Soft. Engnr. </h3>
-                        <p class="personal__description"> After my tenure at U.W.I. ends, I plan to use the skills and traits 
-                            garnered through my internship and experiences to become a well-established software engineer or 
-                            developer.  <br> <br> Solving problems ranging from the simple to the critically complex.  
+                        <h3 class="goals__title"> Become a Engineer </h3>
+                        <p class="personal__description"> Passionate about technology, I aspire to become a software engineer. With a strong foundation 
+                            in computer science, I aim to design innovative solutions, contribute to advancements, and make a meaningful impact 
+                            in the digital realm.  
                         </p>
 
                         <span class="personal__no">02</span>
                     </div>
 
-                    <div class="personal__item">
-                        <i class="fa-solid fa-cubes personal__icon"></i>
+                    <div class="goals__item">
+                        <i class="fa-solid fa-chart-simple personal__icon"></i>
                         
-                        <h3 class="personal__title"> Build Assets </h3>
-                        <p class="personal__description"> Building assets is a crucial part of my long-term vision for personal and
-                            professional growth. I recognize that assets encompass various forms, including financial, intellectual, and 
-                            creative resources that can contribute to my overall success and stability. <br> <br> My goal is to strategically build a 
-                            diverse portfolio of assets that will support me in various aspects of life.
+                        <h3 class="goals__title"> Build Assets </h3>
+                        <p class="goals__description"> Fueled by curiosity and passion, I strive to strategically build 
+                            a diverse range of assets for personal and professional growth. By building strong foundations, 
+                            I aim to create stability, opportunities, and adaptability for long-term success.
                         </p>
 
                         <span class="personal__no">03</span>
                     </div>
 
+                    <div class="goals__item">
+                        <i class="fa-solid fa-handshake-angle personal__icon"></i>
+                        
+                        <h3 class="goals__title"> Start Investments </h3>
+                        <p class="goals__description"> Engaging in investments, I seek financial growth and security. 
+                            Through diligent research and informed decision-making, I balance potential returns with risk management, 
+                            aiming for long-term wealth creation and stability.
+                        </p>
+
+                        <span class="personal__no">04</span>
+                    </div>
+
                 </div>            
             </section>
-
- 
+            
             <!--- Contacts --->
 
             <section class="contact section" id = "contact">
@@ -272,7 +349,7 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form">
+                    <form action="https://formspree.io/f/xayzgepq" method="POST" class="contact__form">
 
                         <div class="form__group">
                             <div class="form__input">
@@ -323,10 +400,7 @@
                     <p class="footer__copyright">2023 &copy; Josiah-John Green. All Right Reserved</p> 
 
                     <div class="footer__social-links">
-                        <a href="https://www.hackerrank.com/josiahjohngreen" class = "footer__social-link btn--transparent" target ="_blank">
-                            <i class="fa-brands fa-hackerrank"></i>
-                        </a>
-                        
+                       
                         <a href="https://www.instagram.com/josiah_jonh_" class = "footer__social-link btn--transparent" target ="_blank">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
@@ -341,10 +415,7 @@
                     </div>
                 </div>
             </section>
-
-            <!--- Filter JS --->
-            <script src="mixitup.min.js"></script>
-           
+         
             <!--- Main JS --->
             <script src="main.js"></script>            
         </main>                    

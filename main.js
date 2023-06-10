@@ -1,44 +1,51 @@
 /* Script: Side-Menu */
 
-var sidemenu = document.getElementById("sidemenu");
+const navmenu = document.getElementById('nav-menu');
+const navtoggle = document.getElementById('nav-toggle');
+const navclose = document.getElementById('nav-close');
 
-function openmenu()
-{
+if(navtoggle){
 
-    sidemenu.style.right = "0";
+    navtoggle.addEventListener('click', ()=>{
 
-}
+        navmenu.classList.add('show-menu');
 
-function closemenu()
-{
-
-    sidemenu.style.right = "-250px";
+    })
 
 }
 
-/* Script: Filter */
+if(navclose){
 
-let mixerPortfolio = mixitup('.work__container', {
-    selectors: {
-        target: '.work__card'
-    },
-    animation: {
-        duration: 300
-    }
-});
+    navclose.addEventListener('click', ()=>{
 
-const linkWork = document.querySelectorAll('.work__item')
+        navmenu.classList.remove('show-menu');
 
-function activeWork() {
-
-   linkWork.forEach(l=> l.classList.remove('active-work'))
-   this.classList.add('active-work')
+    })
 
 }
 
-linkWork.forEach(l=> l.addEventListener("click", activeWork))
+/* Script: Slider */
 
+let slides = document.querySelectorAll('.favourite__contents');
+let index = 0;
 
+function next(){
 
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
 
+}
+
+function previous(){
+
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('active');
+
+}
+
+/* Script: Auto Play */
+
+setInterval(next, 7000); 
 
