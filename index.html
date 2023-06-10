@@ -324,7 +324,7 @@
                             <i class="fa-solid fa-phone contact__icon"></i>
 
                             <div>
-                                <h3 class="contact__title">Call Us</h3>
+                                <h3 class="contact__title">Call Me</h3>
                                 <span class="contact__data">+1 (876)-208-2517</span>
                             </div>
 
@@ -334,7 +334,7 @@
                             <i class="fa-solid fa-envelope contact__icon"></i>
 
                             <div>
-                                <h3 class="contact__title">Email Us</h3>
+                                <h3 class="contact__title">Email Me</h3>
                                 <span class="contact__data">josiahjohngreen@gmail.com</span>
                             </div>
                         </div>
@@ -354,41 +354,48 @@
                         <div class="form__group">
                             <div class="form__input">
                                 <input 
+                                name="full-name"
                                 type="text" 
                                 placeholder="Name" 
                                 id ="Name"
-                                class="input__control"/>
+                                class="input__control"
+                                required/>
                             </div>
 
                             <div class="form__input">
                                 <input 
+                                name="email"
                                 type="email" 
                                 placeholder="Email" 
                                 id ="Email"
-                                class="input__control"/>
+                                class="input__control" 
+                                required/>
                             </div>
                         </div>
 
                         <div class="form__input">
                             <input 
+                            name="subject"
                             type="text" 
                             placeholder="Subject"
                             id ="Subject" 
-                            class="input__control"/>
+                            class="input__control"
+                            required/>
                         </div>
 
                         <div class="form__input">
                             <textarea 
-                            name="" 
+                            name="message" 
                             id ="Message"
                             placeholder="Message" 
                             cols="30"
                             rows="10"
-                            class="input__control textarea"></textarea>
+                            class="input__control textarea"
+                            required></textarea>
                         </div>
 
-                        <button class="btn contact__btn">Send Message</button>
-
+                        <button class="btn contact__btn" id="sendbtn">Send Message</button>
+                   
                     </form>
                 </div>
             </section>
