@@ -47,5 +47,5 @@ function previous(){
 
 /* Script: Auto Play */
 
-setInterval(next, 7000); 
+setInterval(next, 9000); 
 
